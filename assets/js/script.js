@@ -1,6 +1,6 @@
 const questions = [{
     question:"When a vehicle is stopped in a tunnel due to congestion what should a driver do?",
-    answer: [
+    answers: [
         "Switch off the engine",
         "Keep the engine ticking over in a low gear",
         "Switch on the fog lights", 
@@ -9,7 +9,7 @@ const questions = [{
 },
 {
     question: "What does blue smoke coming from the vehicle's exhaust generally mean?",
-    answer: [
+    answers: [
         "The engine is overheating.",
         "The catalytic converter is worn out.",
         "The engine is burning oil.", 
@@ -19,7 +19,7 @@ const questions = [{
 },
 {
     question: "What should a driver do if they are behind schedule in reaching a destination at an appointed time?",
-    answer: [
+    answers: [
         "Drive on the hard shoulder where available.",
         "Exceed the speed limit if necessary to make up the time.",
         "Drive on smartly and overtake any vehicles preventing progress.", 
@@ -29,7 +29,7 @@ const questions = [{
 },
 {
 question: "What lights should a vehicle show at dusk?",
-answer: [
+answers: [
     "Daytime Running Lights (DRLs) only.",
     "Fog lights.",
     "Dipped headlights.", 
@@ -46,6 +46,24 @@ let submitButton = document.getElementById("submit");
 let score = 0; //Counter of correct answers
 let indexOfQuestions = 0; //Current question
 
-headerContainer.innerHTML = "";
-listContainer.innerHTML = "";
+clearBox();
+displayQuestion();
 
+function clearBox(){
+    headerContainer.innerHTML = "";
+    listContainer.innerHTML = "";
+}
+
+function displayQuestion(){
+
+    let headerTepl = `<h2 class="quiz-title">${questions[indexOfQuestions]["question"]}</h2>`;
+    console.log(headerTepl);
+
+    headerContainer.innerHTML=headerTepl;
+    
+    console.log(questions[indexOfQuestions]["question"]);
+    
+    for(answer of questions[indexOfQuestions]["answers"]){
+        console.log(answer);
+    }
+}
