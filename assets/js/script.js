@@ -26,7 +26,8 @@ const questions = [{
         "Be patient and drive so as to arrive safely."
     ],
     correct: "4",
-},{
+},
+{
 question: "What lights should a vehicle show at dusk?",
 answer: [
     "Daytime Running Lights (DRLs) only.",
@@ -35,4 +36,16 @@ answer: [
     "Full headlights."
 ],
 correct: "3",
-]
+}
+];
+
+let headerContainer = document.getElementById("quiz-header");
+let listContainer = document.getElementById("list");
+let submitButton = document.getElementById("submit"); 
+
+let score = 0; //Counter of correct answers
+let indexOfQuestions = 0; //Current question
+
+headerContainer.innerHTML = "";
+listContainer.innerHTML = "";
+
