@@ -49,6 +49,8 @@ let indexOfQuestions = 0; //Current question
 clearBox();
 displayQuestion();
 
+submitButton.onclick = checkAnswer;
+
 function clearBox(){
     headerContainer.innerHTML = "";
     listContainer.innerHTML = "";
@@ -70,4 +72,15 @@ function displayQuestion(){
        
         listContainer.innerHTML += listTempl;
     }
+}
+
+function checkAnswer (){
+    console.log("Check Answer started!")
+    let checkedElement = listContainer.querySelector('input:checked')
+    console.log(checkedElement);
+
+    if (!checkedElement){
+        submitButton.blur();
+        return;
+    } 
 }
