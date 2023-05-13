@@ -59,11 +59,20 @@ function displayQuestion(){
     let headerTepl = `<h2 class="quiz-title">${questions[indexOfQuestions]["question"]}</h2>`;
     console.log(headerTepl);
 
-    headerContainer.innerHTML=headerTepl;
+    headerContainer.innerHTML= headerTepl;
     
     console.log(questions[indexOfQuestions]["question"]);
     
     for(answer of questions[indexOfQuestions]["answers"]){
         console.log(answer);
+        let listTempl = `
+        <li>
+        <label>
+            <input type="radio" class="answer" name="answer">
+            <span>${answer}</span>
+        </label>
+        </li>`;
+        console.log(listTempl);
+        listContainer.innerHTML = listContainer.innerHTML + listTempl;
     }
 }
