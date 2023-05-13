@@ -89,6 +89,22 @@ function checkAnswer (){
         return;
     } 
    
-    let userSelection = parseInt(checkedElement.value);
-    
-}
+    //Get user selected number
+    let userSelection = checkedElement.value;
+
+    console.log(userSelection, questions[indexOfQuestions]["correct"]);
+
+   if (userSelection === questions [indexOfQuestions]["correct"]){
+         score++;
+         console.log("You score = ", score);
+     }
+
+     if(indexOfQuestions !== questions.length-1){
+        console.log("This is NOT the last question!");
+        indexOfQuestions++;
+        clearBox();
+        displayQuestion()
+     }else{
+        console.log("This is the last question!");
+     }
+ }
