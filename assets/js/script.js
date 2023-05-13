@@ -61,26 +61,34 @@ function displayQuestion(){
     let headerTepl = `<h2 class="quiz-title">${questions[indexOfQuestions]["question"]}</h2>`;
     
     headerContainer.innerHTML= headerTepl;
+
+    let indexNumber = 1;
         
-    for(answer of questions[indexOfQuestions]["answers"]){
+    for( answer of questions[indexOfQuestions]["answers"]){
+        console.log(indexNumber, answer);
         let listTempl = `<li>
         <label>
-            <input type="radio" class="answer" name="answer">
+            <input value="${indexNumber}" type="radio" class="answer" name="answer">
             <span>${answer}</span>
         </label>
         </li>`;
        
         listContainer.innerHTML += listTempl;
+
+        indexNumber++;
     }
 }
 
 function checkAnswer (){
     console.log("Check Answer started!")
     let checkedElement = listContainer.querySelector('input:checked')
-    console.log(checkedElement);
-
+    
+//If no answer selected, do nothing. Come out from function.
     if (!checkedElement){
         submitButton.blur();
         return;
     } 
+   
+    let userSelection = parseInt(checkedElement.value);
+    
 }
