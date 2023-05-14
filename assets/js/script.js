@@ -51,33 +51,40 @@ let submitButton = document.getElementById("submit");
 let score = 0; //Counter of correct answers
 let indexOfQuestions = 0; //Current question
 
+const shuffledArr = questions.sort(() => Math.random() - 0.5);
+console.log(shuffledArr);
+
 clearBox();
 displayQuestion();
 
 submitButton.onclick = checkAnswer;
 
 function clearBox(){
-    //imgBox.innerHTML = "";
+    imgBox.innerHTML = "";
     headerContainer.innerHTML = "";
     listContainer.innerHTML = "";
 }
 
+
+
+
+
 function displayQuestion(){
 
-    let imgTempl = `<img src = "${questions[indexOfQuestions]['image']}">`;
+    let imgTempl = `<img src = "${shuffledArr[indexOfQuestions]['image']}">`;
 
     console.log(imgTempl);
 
     imgBox.innerHTML= imgTempl;
     
 
-    let headerTepl = `<h2 class="quiz-title">${questions[indexOfQuestions]["question"]}</h2>`;
+    let headerTepl = `<h2 class="quiz-title">${shuffledArr[indexOfQuestions]["question"]}</h2>`;
     
     headerContainer.innerHTML= headerTepl;
 
     let indexNumber = 1;
         
-    for( answer of questions[indexOfQuestions]["answers"]){
+    for( answer of shuffledArr[indexOfQuestions]["answers"]){
         console.log(indexNumber, answer);
         
         let listTempl = `<li>
@@ -106,14 +113,14 @@ function checkAnswer (){
     //Get user selected number
     let userSelection = checkedElement.value;
 
-    console.log(userSelection, questions[indexOfQuestions]["correct"]);
+    console.log(userSelection, shuffledArr[indexOfQuestions]["correct"]);
 
-   if (userSelection === questions [indexOfQuestions]["correct"]){
+   if (userSelection === shuffledArr [indexOfQuestions]["correct"]){
          score++;
          console.log("You score = ", score);
      }
 
-     if(indexOfQuestions !== questions.length-1){
+     if(indexOfQuestions !== shuffledArr.length-1){
         console.log("This is NOT the last question!");
         indexOfQuestions++;
         clearBox();
@@ -131,12 +138,12 @@ function checkAnswer (){
 
     let title, message, result;
     
-    if(score === questions.length){
+    if(score === shuffledArr.length){
 
         title = "Congratulations!";
         message = "You got all answers correct!";
         
-    }else if ((score *100) / questions.length >=50 ){
+    }else if ((score *100) / shuffledArr.length >=50 ){
         title = "Not bad result!";
         message = "You got more then half answers correct!";
     } else {
@@ -144,8 +151,8 @@ function checkAnswer (){
         message = "You got less then half answers correct.";
     }
 
-    result = `${score} out of ${questions.length}`;
-    console.log(`${score} out of ${questions.length}`);
+    result = `${score} out of ${shuffledArr.length}`;
+    console.log(`${score} out of ${shuffledArr.length}`);
 
     let resultTempl = `
     <h2 class="quiz-title">${title}</h2>
