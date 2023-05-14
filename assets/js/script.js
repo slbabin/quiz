@@ -40,8 +40,22 @@ answers: [
 ],
 image: "assets/images/car-lights_edited.jpg",
 correct: "3",
-}
+},
+{
+    question: "How can a driver help the environment?",
+    answers: [
+        "By increasing speed.",
+        "By harsh acceleration.",
+        "By reducing speed.", 
+        "By braking harshly."
+    ],
+    image: "assets/images/car-lights_edited.jpg",
+    correct: "3",
+    }
 ];
+
+// Randomize array of questions
+const shuffledArr = questions.sort(() => Math.random() - 0.5);
 
 let imgBox = document.getElementById("quiz-image");
 let headerContainer = document.getElementById("quiz-header");
@@ -51,8 +65,6 @@ let submitButton = document.getElementById("submit");
 let score = 0; //Counter of correct answers
 let indexOfQuestions = 0; //Current question
 
-const shuffledArr = questions.sort(() => Math.random() - 0.5);
-console.log(shuffledArr);
 
 clearBox();
 displayQuestion();
@@ -66,14 +78,9 @@ function clearBox(){
 }
 
 
-
-
-
 function displayQuestion(){
 
     let imgTempl = `<img src = "${shuffledArr[indexOfQuestions]['image']}">`;
-
-    console.log(imgTempl);
 
     imgBox.innerHTML= imgTempl;
     
@@ -117,8 +124,7 @@ function checkAnswer (){
 
    if (userSelection === shuffledArr [indexOfQuestions]["correct"]){
          score++;
-         console.log("You score = ", score);
-     }
+        }
 
      if(indexOfQuestions !== shuffledArr.length-1){
         console.log("This is NOT the last question!");
@@ -152,13 +158,13 @@ function checkAnswer (){
     }
 
     result = `${score} out of ${shuffledArr.length}`;
-    console.log(`${score} out of ${shuffledArr.length}`);
-
+  
     let resultTempl = `
     <h2 class="quiz-title">${title}</h2>
     <h3 class="summary">${message}</h2>
     <p class="result">${result}</p>`;
 
+   //Display results to HTML
     headerContainer.innerHTML = resultTempl;
 
    // Update button to Play again
