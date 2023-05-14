@@ -5,6 +5,7 @@ const questions = [{
         "Keep the engine ticking over in a low gear",
         "Switch on the fog lights", 
         "Only give hand signals."],
+    image: "assets/images/cars-in-tunnel.jpg",
     correct: "1",
 },
 {
@@ -15,6 +16,7 @@ const questions = [{
         "The engine is burning oil.", 
         "The air filter needs to be replaced."
     ],
+    image: "assets/images/car-smoke.png",
     correct: "3",
 },
 {
@@ -25,6 +27,7 @@ const questions = [{
         "Drive on smartly and overtake any vehicles preventing progress.", 
         "Be patient and drive so as to arrive safely."
     ],
+    image: "assets/images/driver-schedule2.webp",
     correct: "4",
 },
 {
@@ -35,10 +38,12 @@ answers: [
     "Dipped headlights.", 
     "Full headlights."
 ],
+image: "assets/images/car-lights_edited.jpg",
 correct: "3",
 }
 ];
 
+let imgBox = document.getElementById("quiz-image");
 let headerContainer = document.getElementById("quiz-header");
 let listContainer = document.getElementById("list");
 let submitButton = document.getElementById("submit"); 
@@ -52,11 +57,19 @@ displayQuestion();
 submitButton.onclick = checkAnswer;
 
 function clearBox(){
+    //imgBox.innerHTML = "";
     headerContainer.innerHTML = "";
     listContainer.innerHTML = "";
 }
 
 function displayQuestion(){
+
+    let imgTempl = `<img src = "${questions[indexOfQuestions]['image']}">`;
+
+    console.log(imgTempl);
+
+    imgBox.innerHTML= imgTempl;
+    
 
     let headerTepl = `<h2 class="quiz-title">${questions[indexOfQuestions]["question"]}</h2>`;
     
@@ -66,6 +79,7 @@ function displayQuestion(){
         
     for( answer of questions[indexOfQuestions]["answers"]){
         console.log(indexNumber, answer);
+        
         let listTempl = `<li>
         <label>
             <input value="${indexNumber}" type="radio" class="answer" name="answer">
@@ -116,17 +130,12 @@ function checkAnswer (){
     console.log("You got " + score + " points!");
 
     let title, message, result;
-
-    let resultTempl = `
-    <h2 class="quiz-title">${title}</h2>
-    <h3 class="summary">${message}</h2>
-    <p class="result">${result}</p>`;
-
     
-
     if(score === questions.length){
+
         title = "Congratulations!";
         message = "You got all answers correct!";
+        
     }else if ((score *100) / questions.length >=50 ){
         title = "Not bad result!";
         message = "You got more then half answers correct!";
@@ -135,8 +144,21 @@ function checkAnswer (){
         message = "You got less then half answers correct.";
     }
 
-    result = `${score} out  of ${questions.length}`;
-    console.log(`${score} out  of ${questions.length}`);
+    result = `${score} out of ${questions.length}`;
+    console.log(`${score} out of ${questions.length}`);
+
+    let resultTempl = `
+    <h2 class="quiz-title">${title}</h2>
+    <h3 class="summary">${message}</h2>
+    <p class="result">${result}</p>`;
 
     headerContainer.innerHTML = resultTempl;
+
+   // Update button to Play again
+    submitButton.blur();
+    submitButton.innerHTML = "Play again";
+    submitButton.onclick = function(){
+        history.go();
+    }
+
  }
