@@ -106,5 +106,37 @@ function checkAnswer (){
         displayQuestion()
      }else{
         console.log("This is the last question!");
+        clearBox();
+        displayResults();
      }
+ }
+
+ function displayResults() {
+    console.log("Show results started!");
+    console.log("You got " + score + " points!");
+
+    let title, message, result;
+
+    let resultTempl = `
+    <h2 class="quiz-title">${title}</h2>
+    <h3 class="summary">${message}</h2>
+    <p class="result">${result}</p>`;
+
+    
+
+    if(score === questions.length){
+        title = "Congratulations!";
+        message = "You got all answers correct!";
+    }else if ((score *100) / questions.length >=50 ){
+        title = "Not bad result!";
+        message = "You got more then half answers correct!";
+    } else {
+        title = "You could do better."
+        message = "You got less then half answers correct.";
+    }
+
+    result = `${score} out  of ${questions.length}`;
+    console.log(`${score} out  of ${questions.length}`);
+
+    headerContainer.innerHTML = resultTempl;
  }
