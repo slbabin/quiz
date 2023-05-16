@@ -10,3 +10,16 @@ html, body {
     height: 100%;
 	background-image: linear-gradient(#5379e2, #7b8aaa);
     }
+ .inner-box {
+    width: 60%;
+    height: 50%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(#cd2b0e, #b58f14);
+ }   
+ .landing-page-img{
+    width:300px;
+    height: 300px;
+    background: url("assets/images/warning-crossroad-stop.png") no-repeat;
+ }
