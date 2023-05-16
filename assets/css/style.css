@@ -1,3 +1,12 @@
-.quiz-head {
-    border: 1px solid red;
-} 
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+.main-bgr{
+    height: 100%;
+	background-image: linear-gradient(#5379e2, #7b8aaa);
+    }
