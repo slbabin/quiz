@@ -11,7 +11,7 @@ body {
 }
 
  .inner-box {
-    width: 60%;
+    width: 50%;
     height: 40%;
     position: fixed;
     top: 40%;
@@ -67,21 +67,27 @@ body {
   .quiz {
     width: 50%;
     height: 50%;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:5%;
+ 
+  }
+  #quiz-image{
+    text-align:center;
   }
   .question-img{
     width: 100%;
     max-width: 700px;
     height: auto;
+    margin-right:auto;
+    margin-left:auto;
   }
   .question-title{
     font-size: 2em;
     font-family: 'Anton', sans-serif;
     color:white;
     margin: 20px auto;
+    text-align:center;
   }
   .quiz-list li{
     /* float: left; */
@@ -104,6 +110,7 @@ body {
   .quiz-list li label{
         float:left;
         padding: 20px;
+        width:80%;
    }
   .quiz-list li input{
    margin-top:10px;

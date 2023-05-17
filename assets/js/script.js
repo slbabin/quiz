@@ -38,7 +38,7 @@ answers: [
     "Dipped headlights.", 
     "Full headlights."
 ],
-image: "assets/images/car-lights_edited.jpg",
+image: "assets/images/car-lights.jpg",
 correct: "3",
 },
 {
@@ -49,7 +49,7 @@ correct: "3",
         "By reducing speed.", 
         "By braking harshly."
     ],
-    image: "assets/images/car-lights_edited.jpg",
+    image: "assets/images/eco-driving-tips.avif",
     correct: "3",
     }
 ];
