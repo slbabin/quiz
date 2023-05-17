@@ -80,12 +80,12 @@ function clearBox(){
 
 function displayQuestion(){
 
-    let imgTempl = `<img src = "${shuffledArr[indexOfQuestions]['image']}">`;
+    let imgTempl = `<img class='question-img' src = "${shuffledArr[indexOfQuestions]['image']}">`;
 
     imgBox.innerHTML= imgTempl;
     
 
-    let headerTepl = `<h2 class="quiz-title">${shuffledArr[indexOfQuestions]["question"]}</h2>`;
+    let headerTepl = `<h2 class="question-title">${shuffledArr[indexOfQuestions]["question"]}</h2>`;
     
     headerContainer.innerHTML= headerTepl;
 
