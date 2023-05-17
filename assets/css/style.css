@@ -2,24 +2,30 @@
     margin: 0; 
     padding: 0; 
 }
-html, body {
-    height: 100%;
-    margin: 0px;
+html {
+    min-height: 100%;
 }
-.main-bgr{
-    height: 100%;
-	background-image: linear-gradient(#5379e2, #7b8aaa);
-    }
+
+body {
+    background: linear-gradient(#b5e48c, #457b9d);
+}
+
  .inner-box {
     width: 60%;
     height: 50%;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-image: linear-gradient(#cd2b0e, #b58f14);
  }   
  .landing-page-img{
-    width:300px;
-    height: 300px;
-    background: url("assets/images/warning-crossroad-stop.png") no-repeat;
+    float:right;
+    
+ }
+ .land-head-text{
+    width:50%;
+    float:left;
+    margin-left: 50px;
+    margin-top: 50px;
  }
