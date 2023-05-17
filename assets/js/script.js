@@ -27,7 +27,7 @@ const questions = [{
         "Drive on smartly and overtake any vehicles preventing progress.", 
         "Be patient and drive so as to arrive safely."
     ],
-    image: "assets/images/driver-schedule2.webp",
+    image: "assets/images/driver-schedule2.png",
     correct: "4",
 },
 {
