@@ -144,9 +144,22 @@ input[type="radio"] {
     margin-right: 0.5rem;
 }
 
-.results-title {
- font-size: font-size:3vw;
- color:white;
+h2.results-title {
+ font-size: 5em;
+ color:red;
  font-family: Montserrat;
  text-align: center;
 }
+h3.summary {
+    font-size: 2em;
+    color:gray;
+    font-family: Montserrat;
+    text-align: center;
+   }
+   p.result {
+    font-size: 2em;
+    color:red
+    text-align: center;
+    font-family: Montserrat;
+    text-align: center;
+   }

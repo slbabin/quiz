@@ -142,10 +142,11 @@ function checkAnswer (){
     console.log("Show results started!");
     console.log("You got " + score + " points!");
 
-    let title, message, result;
+    let title, message, result, resultImage;
     
     if(score === shuffledArr.length){
 
+        resultImage = `<img class='result-image' src = "assets/images/warning-crossroad-stop.png">`;
         title = "Congratulations!";
         message = "You got all answers correct!";
         
@@ -160,6 +161,7 @@ function checkAnswer (){
     result = `${score} out of ${shuffledArr.length}`;
   
     let resultTempl = `
+    <div class="results-image-box">${resultImage}</div>
     <h2 class="results-title">${title}</h2>
     <h3 class="summary">${message}</h2>
     <p class="result">${result}</p>`;
