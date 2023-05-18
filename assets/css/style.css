@@ -90,6 +90,10 @@ body {
     color:white;
     margin: 20px auto;
     text-align:center;
+    text-shadow: -1px 1px 2px #000,
+    1px 2px 6px #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
   }
   .quiz-list li{
     margin-bottom: 20px;
@@ -154,15 +158,18 @@ h3.summary {
     font-size: 2em;
     color:gray;
     font-family: Montserrat;
-    text-align: center;
-   }
+    text-align:center;
+     }
+
+
    p.result {
     font-size: 2em;
-    color:red
+    color:red;
     text-align: center;
     font-family: Montserrat;
     text-align: center;
    }
+   
    .results-image-box{
     text-align:center;
    }
