@@ -82,6 +82,7 @@ body {
     height: auto;
     margin-right:auto;
     margin-left:auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   .question-title{
     font-size: 2em;
@@ -91,7 +92,6 @@ body {
     text-align:center;
   }
   .quiz-list li{
-    /* float: left; */
     margin-bottom: 20px;
     width: 48%;
     color:white;
@@ -99,6 +99,7 @@ body {
     list-style: none;
     background-color: #3d4b99;
     font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
     
   }
 
@@ -135,4 +136,10 @@ body {
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-bottom:40px;
+}
+
+input[type="radio"] {
+    height: 1.4rem;
+    width: 1.4rem;
+    margin-right: 0.5rem;
 }
