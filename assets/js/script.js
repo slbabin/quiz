@@ -146,7 +146,7 @@ function checkAnswer (){
     
     if(score === shuffledArr.length){
 
-        resultImage = `<img class='result-image' src = "assets/images/warning-crossroad-stop.png">`;
+        resultImage = `<img class='result-image' src = "assets/images/fireworks.gif">`;
         title = "Congratulations!";
         message = "You got all answers correct!";
         
