@@ -35,7 +35,7 @@ body {
     margin-left: 50px;
     margin-top: 50px;
     color: white;
-    font-size:3vw;
+    
     font-family: 'Anton', sans-serif;
  }
  .main-img {
@@ -139,7 +139,14 @@ body {
 }
 
 input[type="radio"] {
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 1.3rem;
+    width: 1.3rem;
     margin-right: 0.5rem;
+}
+
+.results-title {
+ font-size: font-size:3vw;
+ color:white;
+ font-family: Montserrat;
+ text-align: center;
 }

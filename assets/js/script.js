@@ -160,7 +160,7 @@ function checkAnswer (){
     result = `${score} out of ${shuffledArr.length}`;
   
     let resultTempl = `
-    <h2 class="quiz-title">${title}</h2>
+    <h2 class="results-title">${title}</h2>
     <h3 class="summary">${message}</h2>
     <p class="result">${result}</p>`;
 
