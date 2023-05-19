@@ -23,12 +23,14 @@
         <div class="main-img-box"><img class="main-img" src="assets/images/warning-crossroad-stop.png"></div>
         <div class="level-select">
             <h3>Level:</h3>
-            <input class="form-radio" type="radio" name="level1" id="level1" value="level1">
+            <form action="quiz.html">
+            <input class="form-radio" type="radio" name="levels" id="level1" value="level1">
             <label class="form-radio-txt" for="level1">Easy</label>
-            <input class="form-radio" type="radio" name="level2" id="level2" value="level2">
+            <input class="form-radio" type="radio" name="levels" id="level2" value="level2">
             <label class="form-radio-txt" for="level2">Hard</label>
         </div>
-        <button id="start-quiz-btn" onclick="window.location.href='quiz.html'">Start the quiz now!</button>
+        <button id="start-quiz-btn" type="submit">Start the quiz now!</button>
+    </form>
     </div>
 
     <script src="assets/js/script.js"></script>
