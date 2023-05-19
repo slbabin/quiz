@@ -173,3 +173,9 @@ h3.summary {
    .results-image-box{
     text-align:center;
    }
+
+   .level-select{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+   }
