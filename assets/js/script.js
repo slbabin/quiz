@@ -66,6 +66,34 @@ let score = 0; //Counter of correct answers
 let indexOfQuestions = 0; //Current question
 
 
+
+var minutesTxt = document.getElementById("minutes");
+var secondsTxt = document.getElementById("seconds");
+
+startTimer();
+
+function startTimer() {
+    var startTime = new Date().getTime(); // Get the current timestamp in milliseconds
+  
+    setInterval(function() {
+      var currentTime = new Date().getTime(); // Get the current timestamp in milliseconds
+      var elapsedTime = currentTime - startTime; // Calculate the elapsed time in milliseconds
+  
+      // Convert the elapsed time into hours, minutes, and seconds
+      var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+  
+      // Display the elapsed time
+
+      minutesTxt.innerHTML = minutes.toFixed(1);
+      secondsTxt.innerHTML = seconds.toFixed(1);
+
+      console.log(minutes + "m " + seconds + "s");
+    }, 1000); // Update the timer every second (1000 milliseconds)
+  }
+
+
+
 clearBox();
 displayQuestion();
 
@@ -142,6 +170,11 @@ function checkAnswer (){
      }
  }
 
+ function hideFrontTimer(){
+    var x = document.getElementById("front-timer");        
+      x.style.display = "none";        
+  }
+
  function displayResults() {
     
     let endTime = new Date().getTime();
@@ -175,8 +208,7 @@ function checkAnswer (){
     <p class="result">${result}</p>
     <p class="timer">It took you ${totalTime.toFixed(1)} seconds</p>`;
 
-    
-    
+    hideFrontTimer();
 
    //Display results to HTML
     headerContainer.innerHTML = resultTempl;
