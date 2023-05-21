@@ -85,8 +85,8 @@ function startTimer() {
   
       // Display the elapsed time
 
-      minutesTxt.innerHTML = minutes.toFixed(1);
-      secondsTxt.innerHTML = seconds.toFixed(1);
+      minutesTxt.innerHTML = minutes;
+      secondsTxt.innerHTML = seconds;
 
       console.log(minutes + "m " + seconds + "s");
     }, 1000); // Update the timer every second (1000 milliseconds)
@@ -171,8 +171,8 @@ function checkAnswer (){
  }
 
  function hideFrontTimer(){
-    var x = document.getElementById("front-timer");        
-      x.style.display = "none";        
+    var timerDiv = document.getElementById("front-timer");        
+    timerDiv.style.display = "none";        
   }
 
  function displayResults() {
