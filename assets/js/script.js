@@ -192,9 +192,11 @@ function checkAnswer (){
         message = "You got all answers correct!";
         
     }else if ((score *100) / shuffledArr.length >=50 ){
+        resultImage = `<img class='result-image' src = "assets/images/not-bad.webp">`;
         title = "Not bad result!";
         message = "You got more then half answers correct!";
     } else {
+        resultImage = `<img class='result-image' src = "assets/images/bad-result.webp">`;
         title = "You could do better."
         message = "You got less then half answers correct.";
     }
