@@ -78,7 +78,11 @@ function clearBox(){
 }
 
 
-function displayQuestion(){
+let startTime = new Date().getTime();
+console.log(startTime);
+
+
+function displayQuestion(){    
 
     let imgTempl = `<img class='question-img' src = "${shuffledArr[indexOfQuestions]['image']}">`;
 
@@ -139,6 +143,10 @@ function checkAnswer (){
  }
 
  function displayResults() {
+    
+    let endTime = new Date().getTime();
+    let totalTime = (endTime - startTime) / 1000; // Calculate time spent in seconds
+
     console.log("Show results started!");
     console.log("You got " + score + " points!");
 
@@ -164,7 +172,11 @@ function checkAnswer (){
     <div class="results-image-box">${resultImage}</div>
     <h2 class="results-title">${title}</h2>
     <h3 class="summary">${message}</h2>
-    <p class="result">${result}</p>`;
+    <p class="result">${result}</p>
+    <p class="timer">It took you ${totalTime.toFixed(1)} seconds</p>`;
+
+    
+    
 
    //Display results to HTML
     headerContainer.innerHTML = resultTempl;
