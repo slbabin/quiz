@@ -34,9 +34,12 @@ body {
     float:left;
     margin-left: 50px;
     margin-top: 50px;
-    color: white;
-    
+    color: white;    
     font-family: 'Anton', sans-serif;
+    text-shadow: -1px 1px 2px #000,
+    1px 2px 6px #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
  }
  .main-img {
     width: 100%;
@@ -70,7 +73,7 @@ body {
     height: 50%;
     margin-right:auto;
     margin-left:auto;
-    margin-top:5%;
+    margin-top:4%;
  
   }
   #quiz-image{
@@ -174,8 +177,11 @@ h3.summary {
     text-align:center;
    }
 
-   .level-select{
-    position: absolute;
-    top: 50%;
-    left: 50px;
-   }
+#front-timer{
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    color: red;
+    margin-right: 20px;
+    width: 100px;
+}
