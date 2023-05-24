@@ -67,21 +67,21 @@ let indexOfQuestions = 0; //Current question
 
 
 
-var minutesTxt = document.getElementById("minutes");
-var secondsTxt = document.getElementById("seconds");
+let minutesTxt = document.getElementById("minutes");
+let secondsTxt = document.getElementById("seconds");
 
 startTimer();
 
 function startTimer() {
-    var startTime = new Date().getTime(); // Get the current timestamp in milliseconds
+    let startTime = new Date().getTime(); // Get the current timestamp in milliseconds
   
     setInterval(function() {
-      var currentTime = new Date().getTime(); // Get the current timestamp in milliseconds
-      var elapsedTime = currentTime - startTime; // Calculate the elapsed time in milliseconds
+      let currentTime = new Date().getTime(); // Get the current timestamp in milliseconds
+      let elapsedTime = currentTime - startTime; // Calculate the elapsed time in milliseconds
   
       // Convert the elapsed time into hours, minutes, and seconds
-      var minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+      let minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
   
       // Display the elapsed time
 
