@@ -124,7 +124,7 @@ function displayQuestion() {
     let indexNumber = 1;
 
     //Loop through the object and generate a list of answers
-    for (answer of shuffledArr[indexOfQuestions]["answers"]) {
+    for (let answer of shuffledArr[indexOfQuestions]["answers"]) {
         let listTempl =
             `<li>
         <label>
@@ -162,7 +162,7 @@ function checkAnswer() {
     if (indexOfQuestions !== shuffledArr.length - 1) {
         indexOfQuestions++;
         clearBox();
-        displayQuestion()
+        displayQuestion();
     } else {
         clearBox();
         displayResults();
@@ -195,7 +195,7 @@ function displayResults() {
         message = "You got more then half answers correct!";
     } else {
         resultImage = `<img class='result-image' src = "assets/images/bad-result.webp">`;
-        title = "You could do better."
+        title = "You could do better.";
         message = "You got less then half answers correct.";
     }
 
@@ -218,6 +218,6 @@ function displayResults() {
     submitButton.innerHTML = "Play again";
     submitButton.onclick = function () {
         history.go();
-    }
+    };
 
 }
