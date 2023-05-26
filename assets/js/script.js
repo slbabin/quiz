@@ -82,10 +82,9 @@ function startTimer() {
         let seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
 
         // Display the elapsed time
-        minutesTxt.innerHTML = minutes;
-        secondsTxt.innerHTML = seconds;
+        minutesTxt.innerHTML = minutes.toString().padStart(2, '0');
+        secondsTxt.innerHTML = seconds.toString().padStart(2, '0');
 
-        console.log(minutes + "m " + seconds + "s");
     }, 1000); // Update the timer every second (1000 milliseconds)
 }
 
