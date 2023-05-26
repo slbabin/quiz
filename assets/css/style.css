@@ -204,6 +204,15 @@ h3.summary {
     1px -1px 0 #ffffff,
     -1px -1px 0 #ffffff;
 }
+@media (max-width: 520px) {
+    #front-timer {
+        width: 50%;
+    }
+    .quiz-list li {
+         width: 100%;
+                
+    }
+}
 @media (max-width: 1200px) {
     .quiz-list li {
         margin-bottom: 20px;
@@ -214,6 +223,9 @@ h3.summary {
         background-color: #3d4b99;
         font-size: 1.2em;
         font-family: 'Montserrat', sans-serif;
+    }
+    .quiz {
+        width: 80%;
     }
 }
 .timer{
