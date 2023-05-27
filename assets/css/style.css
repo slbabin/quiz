@@ -212,6 +212,45 @@ h3.summary {
          width: 100%;
                 
     }
+    .land-head-text {
+        font-size: 1.4em;
+        width: 80%;
+        margin-left: 40px;
+    }
+    #start-quiz-btn {
+        width: 80%;
+        position: absolute;
+        left: 20px;        
+    }
+    .main-img-box {
+        float: right;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 820px) {
+    .quiz {
+        width: 80%;
+    }
+    .land-head-text {
+        font-size: 1.4em;
+        width: 80%;
+        margin-left: 40px;
+    }
+    #start-quiz-btn {
+        width: 80%;
+        position: absolute;
+        left: 30px;        
+    }
+    .main-img-box {
+        float: right;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
 }
 @media (max-width: 1200px) {
     .quiz-list li {
@@ -227,6 +266,11 @@ h3.summary {
     .quiz {
         width: 80%;
     }
+    #start-quiz-btn {
+        width: 80%;
+        position: absolute;
+        left: 30px;        
+    }
 }
 .timer{
     font-family: 'Montserrat';
@@ -234,8 +278,4 @@ h3.summary {
     text-align: center;
     padding: 10px;
 }
-@media (max-width: 820px) {
-    .quiz {
-        width: 80%;
-    }
-}
+

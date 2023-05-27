@@ -9,7 +9,7 @@ Link to the live site [here](https://slbabin.github.io/quiz/).
 
 ## Features
 - Multiple Choice Questions: The quiz consists of a series of multiple-choice questions covering various aspects of traffic rules. Each question presents you with several options, and you must select the correct answer that best corresponds to the given scenario or rule.
-- The quiz displays a dynamically changed with each question image. Images help visually represent concepts or scenarios related to the quiz questions. They  enhance the clarity and understanding of the question by providing a visual context, making it easier for the user to interpret and answer accurately.
+- A dynamically changed with each question image: Images help visually represent concepts or scenarios related to the quiz questions. They  enhance the clarity and understanding of the question by providing a visual context, making it easier for the user to interpret and answer accurately.
 - Time tracking: After starting the quiz, the timer appears on the screen. The timer adds a sense of challenge and urgency to the quiz, encouraging participants to answer questions quickly and efficiently. It creates a more engaging and dynamic experience, keeping users focused and motivated throughout the quiz. 
 - Score calculation: At the end of the quiz, a user presented with the score based on the number of answered correct answers out of the total pool of questions. 
 The score serves as a motivator for participants to strive for a higher score with each attempt. It provides a target to beat and can encourage a sense of achievement when participants see improvement over time. 
