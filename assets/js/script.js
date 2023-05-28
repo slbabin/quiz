@@ -50,7 +50,7 @@ const questions = [{
         "By reducing speed.",
         "By braking harshly."
     ],
-    image: "assets/images/eco-driving-tips.avif",
+    image: "assets/images/eco-driving-tips.jpg",
     correct: "3",
 }
 ];

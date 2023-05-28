@@ -13,7 +13,7 @@ Link to the live site [here](https://slbabin.github.io/quiz/).
 
      ![Screenshot of the Product links section](assets/docs/multi-choice-questions.jpg) 
 
-- A dynamically changed with each question image: Images help visually represent concepts or scenarios related to the quiz questions. They  enhance the clarity and understanding of the question by providing a visual context, making it easier for the user to interpret and answer accurately.
+- Dynamically changed with each question image: Images help visually represent concepts or scenarios related to the quiz questions. They  enhance the clarity and understanding of the question by providing a visual context, making it easier for the user to interpret and answer accurately.
 
     ![Screenshot of the Product links section](assets/docs/dynamic-image.jpg) 
 
@@ -30,6 +30,14 @@ The score serves as a motivator for participants to strive for a higher score wi
 - Spent time calculation: The time spent counter allows participants to reflect on the amount of time they took to complete the quiz. It provides a sense of self-awareness regarding their speed and efficiency in answering the questions. Participants can assess whether they took an appropriate amount of time or if they need to work on improving their time management skills.
 
     ![Screenshot of the Product links section](assets/docs/spent-time.jpg) 
+
+## Quiz logic diagram    
+
+<details>
+<summary>Diagram</summary>
+<img src="assets/images/diagram.png">
+</details>
+
 
 ## Design 
 
@@ -98,6 +106,13 @@ The quiz was tested for accessibility and performance using the Lighthouse tool 
     <img src="assets/docs/lighthouse-mobile.jpg">
     </details>
 
+__Web browser compatibility__    
+The quiz was tested in the following browsers.
+- Google Chrome
+- Mozilla Firefox
+- Opera
+- Safari
+
 ## Deployment
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. On the Repository page, click on the "Settings" button.
@@ -121,7 +136,12 @@ Programs Used
 
 ## Credits
 __Content__
- - The text .
+ 
+ - Questions for the quiz were taken from the [TheoryTestIreland.org](https://theorytestireland.org/t).
 
 __Media__
-- Images
+- The landing page image was taken from [www.flaticon.com](https://www.flaticon.com/free-icon/driving-test_3400666).
+- Images for the quiz were taken from [www.pixabay.com](https://pixabay.com/photos/cars-close-up-headlights-lights-1840934/), [www.caranddriver.com/](https://www.caranddriver.com/car-insurance/a36279965/comp-insurance-car/), [www.designi.com.br](https://www.designi.com.br/d1a377ca74fd9f7c) and [www.gomechanic.in](https://gomechanic.in/blog/car-exhaust-smoke/).
+
+__Code__
+- The quiz code was inspired by the code from this [Youtube video](https://www.youtube.com/watch?v=hFKVLwe_yLg&ab_channel=%D0%92%D0%B5%D0%B1%D0%9A%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8-%D0%B2%D0%B5%D0%B1-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%2C%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%B8IT). 
