@@ -259,6 +259,12 @@ h3.summary {
     }
 }
 @media (max-width: 520px) {
+    .inner-box {
+        width: 80%;
+        height: 70%;
+       
+    }
+
     #front-timer {
         width: 50%;
     }
