@@ -62,8 +62,10 @@ __Typography__
     - The Anton font was chosen for titles and headings. Anton is a bold and attention-grabbing font. It has thick letterforms with high contrast, which make it stand out on the page.  
 
 ## Testing and Validation
- The HTML of the quiz was validated using the W3C Markup Validation Service . All pages passed with no errors or warnings.
- - HTML validation
+ 
+ __HTML validation__
+
+The HTML of the quiz was validated using the W3C Markup Validation Service . All pages passed with no errors or warnings.
     <details>
     <summary>Index page HTML validation</summary>
     <img src="assets/docs/w3c-index-page-validation.jpg">
@@ -73,8 +75,28 @@ __Typography__
     <img src="assets/docs/w3c-quiz-page-validation.jpg">
     </details>
 
- - CSS validation
+ __CSS validation__  
+ The CSS code was validated in the W3C Jigsaw CSS Validation Service. The code passed without any errors. 
+    <details>
+    <summary>CSS validation result</summary>
+    <img src="assets/docs/css-validation.jpg">
+    </details>
 
+__JavaScript validation__
+
+The JavaScript file was validated using the [JSHint](https://en.wikipedia.org/wiki/JSHint) code analysis tool. Initially, it showed multiple warnings - 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz). But since these warnings are not related to the code, they were hidden using /*jshint esversion: 6 */. Other four warnings also not essensial. 
+    <details>
+    <summary> JavaSript validation results</summary>
+    <img src="assets/docs/javascript-jshint-validation.jpg">
+    </details>
+
+__Accessibility and Performance__
+
+The quiz was tested for accessibility and performance using the Lighthouse tool on Google Chrome Devtools. 
+    <details>
+    <summary> The Lighthouse results</summary>
+    <img src="assets/docs/lighthouse-mobile.jpg">
+    </details>
 
 ## Deployment
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
@@ -92,7 +114,14 @@ Languages Used
 
 Programs Used
  - [GitHub:](https://github.com/) Used for version control and to store the projects code after being pushed from GitPod or Codeanywhere.
-  - [Codeanywhere:](https://codeanywhere.com/) Alternative cloud IDE to GitPod
+  - [Codeanywhere:](https://codeanywhere.com/) Codeanywhere is a cloud-based integrated development environment that includes a built-in code editor, a fully-featured development environment for servers and containers, an integrated debugger, and live collaboration tools.
   - [Photopea:](https://www.photopea.com/) Online photo editor. Used for editing images.
   - [Balsamiq:](https://balsamiq.com/wireframes/) Was used to create the wireframes.
   - [Google fonts:](https://fonts.google.com/) Used to import the 'Monserat' and Anto fonts into the style.css file which is used on all pages throughout the project.
+
+## Credits
+__Content__
+ - The text .
+
+__Media__
+- Images
