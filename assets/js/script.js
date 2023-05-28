@@ -1,4 +1,4 @@
-//Array of object with questions and answers
+//Array of objects with questions and answers
 const questions = [{
     question: "When a vehicle is stopped in a tunnel due to congestion what should a driver do?",
     answers: [
