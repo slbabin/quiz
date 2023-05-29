@@ -55,6 +55,20 @@ const questions = [{
 }
 ];
 
+ // A pop up box with rules
+ rulesButton.addEventListener("click", function () {
+    rulesBox.classList.add("show");
+});
+closePopup.addEventListener("click", function () {
+    rulesBox.classList.remove("show");
+});
+window.addEventListener("click", function (event) {
+    if (event.target == rulesBox) {
+        rulesBox.classList.remove("show");
+    }
+});
+
+
 // Randomize array of questions
 const shuffledArr = questions.sort(() => Math.random() - 0.5);
 
