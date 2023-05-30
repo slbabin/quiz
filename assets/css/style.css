@@ -11,7 +11,10 @@ html {
 body {
     background: linear-gradient(#8cc4e4, #487795);
 }
-
+header{
+    width: 50%;
+    margin: 10px auto 0 auto;
+}
  .inner-box {
     width: 50%;
     height: 60%;
@@ -216,28 +219,7 @@ h3.summary {
 }
 
 
-@media (max-width: 820px) {
-    .quiz {
-        width: 80%;
-    }
-    .land-head-text {
-        font-size: 1.4em;
-        width: 80%;
-        margin-left: 40px;
-    }
-    #start-quiz-btn {
-        width: 80%;
-        position: absolute;
-        left: 30px;        
-    }
-    .main-img-box {
-        float: right;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-    }
-    
-}
+
 @media (max-width: 1200px) {
     .quiz-list li {
         margin-bottom: 20px;
@@ -256,6 +238,41 @@ h3.summary {
         width: 80%;
         position: absolute;
         left: 30px;        
+    }
+}
+@media (max-width: 920px) {
+    .quiz {
+        width: 80%;
+    }
+    .inner-box {
+        width: 80%;
+        height: 80%;
+        top: 50%;
+       
+    }
+    .land-head-text {
+        font-size: 1.4em;
+        width: 80%;
+        margin-left: 40px;
+    }
+    #start-quiz-btn {
+        width: 80%;
+        position: absolute;
+        left: 30px;        
+    }
+    .main-img-box {
+        float: right;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    .main-img {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        width: 80%;
+        margin: 10px auto 0 auto;
     }
 }
 @media (max-width: 520px) {
@@ -293,12 +310,13 @@ h3.summary {
         width: 130%;
         height: auto;
     }
+    header {
+        width: 80%;
+        margin: 10px auto 0 auto;
+    }
 }
 
-header{
-    width: 50%;
-    margin: 10px auto 0 auto;
-}
+
 #rulesButton{
     float: right;
     background-color: #3F51B5;
