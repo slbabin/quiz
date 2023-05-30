@@ -55,8 +55,12 @@ const questions = [{
 }
 ];
 
- // A pop up box with rules
- rulesButton.addEventListener("click", function () {
+// A pop-up box with rules 
+let rulesButton;
+let rulesBox;
+let closePopup;
+
+rulesButton.addEventListener("click", function () {
     rulesBox.classList.add("show");
 });
 closePopup.addEventListener("click", function () {
