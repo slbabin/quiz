@@ -71,6 +71,12 @@ __Typography__
     - The Anton font was chosen for titles and headings. Anton is a bold and attention-grabbing font. It has thick letterforms with high contrast, which make it stand out on the page.  
 
 ## Testing and Validation
+
+|  Feature |  Action |  Expected Result | Actual Result |
+|---|---|---|---|
+|  Landing page |  Click on the start button | Redirect to the quiz page  | Work as expected  |
+|  tstst |  sdf | dfd  | dfd  |
+
  
  __HTML validation__
 

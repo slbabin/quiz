@@ -56,9 +56,6 @@ const questions = [{
 ];
 
 // A pop-up box with rules 
-let rulesButton;
-let rulesBox;
-let closePopup;
 
 rulesButton.addEventListener("click", function () {
     rulesBox.classList.add("show");
