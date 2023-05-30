@@ -307,8 +307,7 @@ header{
     padding: 16px 20px;
     text-align: center;
     text-decoration: none;
-    /* display: inline-block; */
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -327,14 +326,24 @@ header{
 .rules-content {
     background-color: white;
     margin: 10% auto;
-    padding: 20px;
+    padding: 40px;
     border: 1px solid #888888;
     width: 30%;
     font-weight: bolder;
+    font-family: Montserrat;
 }
 .rules-content button {
     display: block;
-    margin: 0 auto;
+    background-color: #3F51B5;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    margin: 20px auto 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 .show {
     display: block;
