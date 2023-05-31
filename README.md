@@ -72,7 +72,7 @@ __Typography__
 
 ## Testing and Validation
 
- __Testing User Stories__
+ __User Actionss__
 
 |  Feature |  Action |  Expected Result | Actual Result |
 |---|---|---|---|
