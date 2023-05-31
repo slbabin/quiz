@@ -84,7 +84,7 @@ header{
     height: 50%;
     margin-right:auto;
     margin-left:auto;
-    margin-top:4%;
+    margin-top:10px;
  
   }
   #quiz-image{
@@ -200,7 +200,7 @@ h3.summary {
     font-weight: bold;
     float: right;
     color: red;
-    width: 25%;
+    width: 125px;
     position: absolute;
     right: 10px;
     top:-20px;
@@ -284,13 +284,12 @@ h3.summary {
         top: 50%;
        
     }
-
-    #front-timer {
-        width: 50%;
+    .question-title{
+        font-size: 1.3em;
     }
-    .quiz-list li {
-         width: 100%;
-                
+
+     .quiz-list li {
+         width: 100%;                
     }
     .land-head-text {
         font-size: 1.4em;

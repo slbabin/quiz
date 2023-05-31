@@ -72,11 +72,16 @@ __Typography__
 
 ## Testing and Validation
 
+ __Testing User Stories__
+
 |  Feature |  Action |  Expected Result | Actual Result |
 |---|---|---|---|
-|  Landing page |  Click on the start button | Redirect to the quiz page  | Work as expected  |
-|  tstst |  sdf | dfd  | dfd  |
-
+|  Landing page |  Click on the Start button | Redirect to the quiz page  | Works as expected  |
+|  Quiz page |  Starting a quiz | Displays a new image | Works as expected  |
+|  Quiz page |  Starting a quiz | Timer counter appear| Works as expected  |
+|  Quiz page |  Click on one of the answers | Select only one answer  | Works as expected  |
+|  Quiz page |  Click on one the Submit button | Delete the current question and display a new one | Works as expected  | 
+|  Quiz page |  Submit answer to the last question | Depending on the amount of correct answers, dispay a corresponding image and a message | Works as expected  |
  
  __HTML validation__
 
