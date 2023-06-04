@@ -1,4 +1,4 @@
-# Rules Of The Roads Quiz info
+# Rules Of The Road Quiz info
 
 This quiz is designed to test participants knowledge of traffic rules and regulations, ensuring that they have a solid understanding of the rules necessary for safe and responsible driving. Whether you're a new driver preparing for your license exam or an experienced driver looking to refresh your knowledge, this quiz provides a comprehensive set of multiple-choice questions to challenge and educate participants.
 
