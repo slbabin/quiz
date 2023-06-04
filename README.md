@@ -1,4 +1,4 @@
-# Quiz info
+# Rules Of The Roads Quiz info
 
 This quiz is designed to test participants knowledge of traffic rules and regulations, ensuring that they have a solid understanding of the rules necessary for safe and responsible driving. Whether you're a new driver preparing for your license exam or an experienced driver looking to refresh your knowledge, this quiz provides a comprehensive set of multiple-choice questions to challenge and educate participants.
 
@@ -42,7 +42,7 @@ The score serves as a motivator for participants to strive for a higher score wi
 
 ## Design 
 
-- The quiz consists of the landing page and the actual quiz page. A landing page sets the context and creats anticipation for the participants. 
+- The quiz consists of the landing page and the actual quiz page. A landing page sets the context and creates anticipation for the participants. 
 
 - Wireframes
   
@@ -64,7 +64,7 @@ The score serves as a motivator for participants to strive for a higher score wi
 
 __Colour Scheme__
     - Blue was chosen as the main color of the quiz because it is often associated with clarity, logic, and rational thinking. It is a color commonly used in educational settings due to its perceived intellectual qualities. By incorporating blue into the quiz's color scheme, it can create an atmosphere that promotes clear thinking and logical problem-solving, which are essential aspects of a quiz. 
-    - The text color is white because is is often associated with cleanliness, simplicity, and minimalism. It creates a clean and uncluttered visual appearance, allowing the content to stand out.
+    - The text color is white because is often associated with cleanliness, simplicity, and minimalism. It creates a clean and uncluttered visual appearance, allowing the content to stand out.
 
 __Typography__
     - The Montserrat font was chosen as the main font throughout the whole website due to its clean and attractive design. Sans Serif  was chosen as the fallback font. 
@@ -72,7 +72,7 @@ __Typography__
 
 ## Testing and Validation
 
- __User Actionss__
+ __User Actions__
 
 |  Feature |  Action |  Expected Result | Actual Result |
 |---|---|---|---|
@@ -81,7 +81,7 @@ __Typography__
 |  Quiz page |  Starting a quiz | Timer counter appear| Works as expected  |
 |  Quiz page |  Click on one of the answers | Select only one answer  | Works as expected  |
 |  Quiz page |  Click on one the Submit button | Delete the current question and display a new one | Works as expected  | 
-|  Quiz page |  Submit answer to the last question | Depending on the amount of correct answers, dispay a corresponding image and a message | Works as expected  |
+|  Quiz page |  Submit answer to the last question | Depending on the amount of correct answers, display a corresponding image and a message | Works as expected  |
  
  __HTML validation__
 
@@ -144,7 +144,7 @@ Programs Used
   - [Codeanywhere:](https://codeanywhere.com/) Codeanywhere is a cloud-based integrated development environment that includes a built-in code editor, a fully-featured development environment for servers and containers, an integrated debugger, and live collaboration tools.
   - [Photopea:](https://www.photopea.com/) Online photo editor. Used for editing images.
   - [Balsamiq:](https://balsamiq.com/wireframes/) Was used to create the wireframes.
-  - [Google fonts:](https://fonts.google.com/) Used to import the 'Monserat' and Anto fonts into the style.css file which is used on all pages throughout the project.
+  - [Google fonts:](https://fonts.google.com/) Used to import the 'Monserat' and Anton fonts into the style.css file which is used on all pages throughout the project.
 
 ## Credits
 __Content__
