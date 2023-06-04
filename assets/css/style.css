@@ -367,3 +367,9 @@ h3.summary {
 .show {
     display: block;
 }
+
+.github-logo{
+    position: absolute;
+    bottom: -65px;
+    left: 48%;
+}
